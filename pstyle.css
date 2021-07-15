@@ -1,0 +1,100 @@
+body {
+  background-image: url(canvas.jpg);
+}
+
+h1 {
+  font-family: "Nanum Brush Script", cursive !important;
+  font-size: 80px !important;
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+form {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("notebook.jpg");
+  height: 300px;
+  width: 800px;
+  padding-left: 40px;
+  padding-top: 20px;
+  zoom: 0.9;
+}
+
+#newTask {
+  width: 500px;
+  height: 60px;
+  overflow-wrap: break-word;
+}
+#date {
+  width: 200px;
+  margin-top: 50px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  zoom: 0.78;
+  margin-top: 70px;
+  justify-content: left;
+}
+
+.memo {
+  background: transparent url(memo.png) center center/auto no-repeat;
+  background-size: cover;
+  /* border-style: solid;
+  border-width: 4px; */
+  margin: 10px;
+  width: 378px;
+  height: 379px;
+  animation: memo 1s linear 0s 1 normal forwards;
+}
+
+@keyframes memo {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+p:nth-child(2) {
+  width: 335px;
+  height: 239px;
+  overflow-wrap: break-word;
+  padding-left: 27px;
+  overflow: auto;
+  margin-top: 12px;
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+p:nth-child(3) {
+  margin-left: 23px;
+  margin-bottom: 3px;
+}
+p:nth-child(4) {
+  margin-left: 25px;
+}
+
+.glyphicon {
+  margin-left: 339px;
+  margin-top: 34px;
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 1ms ease-in 0s;
+}
+
+:hover {
+  opacity: 1;
+}
+
+/* 
+* {
+  zoom: 0.95;
+} */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pstyle.css" />
+    <script src="pjavas.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+
+    <title>My Task Board</title>
+  </head>
+
+  <body>
+    <h1>My Task Board</h1>
+    <form onsubmit="addtask(event)">
+      <label>New Task: </label>
+      <input
+        type="text"
+        id="newTask"
+        placeholder="Write your task here!"
+        size="40"
+        required
+      />
+      <br />
+
+      <label>Date: </label>
+      <input type="date" id="date" required />
+      <br /><br />
+
+      <label>Time: </label>
+      <input type="time" id="time" required />
+      <br /><br />
+
+      <button type="submit">Add task</button>
+      <button type="reset">Begin Fresh!</button>
+    </form>
+
+    <div class="flex-container" id="noteContainer">
+      <!-- <div class="memo" id="memo0">
+        <p id="taskText">Task</p>
+        <p id="taskDate">Date</p>
+        <p id="taskTime">Time</p>
+        <span id="xIcon" class="glyphicon glyphicon-remove"></span>  -->
+    </div>
+  </body>
+</html>
